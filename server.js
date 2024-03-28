@@ -7,6 +7,10 @@ const app = express();
 
 const allNotes = require('./db/db.json');
 
+const localhostLink = `http://localhost:${PORT}`; 
+console.log('Localhost link:', localhostLink);
+
+
 //  setting up middleware for parsing incoming URL-encoded and JSON data, and also configuring Express to serve static files from the public directory
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
