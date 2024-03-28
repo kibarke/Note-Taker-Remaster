@@ -86,4 +86,4 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 
 ### Help
-Thomas Calle 
+Thomas Calle (https://github.com/ThomasCalle/Thomas-Express-JS-Note-Taker)
