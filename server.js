@@ -32,6 +32,20 @@ app.get('*', (req,res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
+if (allNotes !== null) {
+    console.log("allNotes is null!")
+} else {
+    console.error("Uh-oh! allNotes isn't null.");
+}
+
+let notes;
+try {
+    notes = require('./db/db.json');
+} catch (error) {
+    console.error('Error loading db.json:', error);
+    // Handle the error
+}
+
 // creating a new note, assigning it a unique ID, and updating the list of notes stored in a JSON file
 function createNewNote(body, notesArray) {
     const newNote = body;
@@ -68,7 +82,7 @@ function deleteNote(id, notesArray) {
     for (let i = 0; i < notesArray.length; i++) {
         let note = notesArray[i];
 
-        if (note.id == id) {
+        if (note.id == parseInt(id, 10)) {
             notesArray.splice(i, 1);
             fs.writeFileSync(
                 path.join(__dirname, './db/db.json'),

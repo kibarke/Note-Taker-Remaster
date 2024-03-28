@@ -1,6 +1,13 @@
 [
-    {
-        "title":"Test Title",
-        "text":"Test text"
-    }
+  null,
+  {
+    "title": "make notes",
+    "text": "can you find me?",
+    "id": null
+  },
+  {
+    "title": "delete note",
+    "text": "no I can't find you",
+    "id": null
+  }
 ]
