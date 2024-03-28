@@ -83,3 +83,7 @@ For questions about the project, you can reach me at [Kibarkework@gmail.com](mai
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+
+### Help
+Thomas Calle 
